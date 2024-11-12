@@ -54,3 +54,34 @@ p {
   margin: 5px;
   object-fit: cover;  /* Чтобы изображения сохраняли пропорции и не искажались */
 }
+
+/* Стиль для кнопки */
+.button {
+  background-color: #28a745; /* Зеленый цвет для кнопки */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Эффект пульсации при наведении */
+.button:hover {
+  animation: pulse 1s infinite; /* Пульсация будет длиться 1 секунду, повторяться бесконечно */
+}
+
+/* Описание анимации пульсации */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1); /* Увеличение размера на 10% */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
