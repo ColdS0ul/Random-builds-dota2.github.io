@@ -1,0 +1,56 @@
+/* Основные стили для сайта */
+.navbar-inverse {
+  background-color: #252a33;
+}
+
+body {
+  padding-top: 70px;
+  background-color: #1f232a;
+  color: #fff;
+}
+
+.content {
+  text-align: left;
+  margin-left: auto;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+p {
+  font-family: verdana, Times, Sans-serif;
+  color: #bbb;
+}
+
+p {
+  text-align: center;
+  font-family: "Verdana", Times, Sans-serif;
+}
+
+/* Стили для блока с героем */
+#hero-wrapper {
+  margin-top: 10px;
+  display: none;
+}
+
+#hero-name {
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+/* Стили для контейнера с билдом */
+#build-container {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#build-container img {
+  width: 100px;  /* Увеличиваем ширину */
+  height: 60px;  /* Уменьшаем высоту для прямоугольного вида */
+  margin: 5px;
+  object-fit: cover;  /* Чтобы изображения сохраняли пропорции и не искажались */
+}
