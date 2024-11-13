@@ -1,0 +1,135 @@
+/* Основные стили для сайта */
+body {
+  padding-top: 70px;
+  background-color: #1f232a;
+  color: #fff;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+/* Стили для контейнера с билдом */
+.item-grid {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px; /* Пространство между изображениями */
+}
+
+/* Стиль для контейнера с изображением и названием */
+.item {
+  position: relative;
+  text-align: center;
+}
+
+/* Стиль для иконок предметов */
+.item-grid img {
+  width: 74px;  /* Увеличиваем ширину */
+  height: 60px;  /* Уменьшаем высоту для прямоугольного вида */
+  margin: 1px;
+  object-fit: cover;  /* Чтобы изображения сохраняли пропорции и не искажались */
+  transition: box-shadow 0.2s ease, transform 0.2s ease; /* Плавное изменение свечения и масштаба */
+}
+
+/* Эффект свечения при наведении на иконку предмета */
+.item-grid img:hover {
+  box-shadow: 0 0 30px rgba(0, 123, 255, 0.8); /* Усиленное синее свечение */
+  transform: scale(1.05); /* Легкое увеличение масштаба для эффекта наведения */
+}
+
+/* Стили для названия предмета */
+.item-name {
+  display: none; /* Название скрыто по умолчанию */
+  position: absolute;
+  bottom: -20px; /* Размещаем название под изображением */
+  left: 50%;
+  transform: translateX(-50%); /* Центрируем название */
+  background-color: rgba(0, 123, 255, 0.7); /* Полупрозрачный фон для текста */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100%;
+}
+
+/* Показываем название при наведении на изображение */
+.item:hover .item-name {
+  display: block; /* Показываем название при наведении на родительский элемент */
+}
+
+/* Убираем подчеркивание для всех ссылок навигации */
+.nav-button {
+  text-decoration: none !important; /* Убираем подчеркивание */
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.nav-button.active {
+  background-color: #007bff;
+}
+
+.navbar-inverse {
+  background-color: transparent;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-left: 8px;
+}
+
+.nav-button:hover {
+  background-color: #0056b3;
+}
+
+/* Стили для кнопки */
+.button {
+  background-color: #007bff !important; /* Синий цвет для кнопки */
+  border: none;
+  color: white;
+  padding: 12px 24px; /* Уменьшаем кнопки */
+  text-align: center;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Светящееся свечение синее */
+  margin-top: 20px; /* Добавлен отступ сверху для кнопки */
+  transition: box-shadow 0.3s ease, background-color 0.3s ease, transform 0.3s ease; /* Плавное изменение для цвета, свечения и масштабирования */
+  outline: none; /* Убираем стандартное обводку */
+}
+
+/* Эффект при наведении */
+.button:hover {
+  background-color: #0056b3 !important; /* Темно-синий цвет при наведении */
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.8); /* Усиленное свечение синее */
+  color: white; /* Белый цвет текста при фокусе */
+}
+
+/* Эффект при нажатии */
+.button:active {
+  background-color: #007bff !important; /* Оставляем синий цвет при нажатии */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Обычное свечение */
+  outline: none; /* Убираем стандартное обводку при фокусе */
+  color: white; /* Белый цвет текста при фокусе */
+}
+
+/* Эффект при фокусе (например, если кнопка активирована через клавишу) */
+.button:focus {
+  outline: none; /* Убираем стандартное обводку при фокусе */
+  background-color: #007bff !important; /* Оставляем синий цвет при фокусе */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.8); /* Усиленное свечение при фокусе */
+  color: white; /* Белый цвет текста при фокусе */
+}
+
+/* Стили для кнопок Bootstrap */
+.btn {
+  background-color: #007bff !important; /* Убедитесь, что кнопки Bootstrap не меняют цвет */
+  border-color: #007bff !important;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
